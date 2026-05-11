@@ -12,16 +12,19 @@ const entranceTransition = {
 
 export default function Hero() {
   return (
-    <section id="problem" className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-black">
-      {/* Background Video */}
-      <FadingVideo
-        src="https://stream.mux.com/r6pXRAJb3005XEEbl1hYU1x01RFJDSn7KQApwNGgAHHbU.m3u8"
-        className="absolute left-1/2 top-0 -translate-x-1/2 object-cover object-top z-0"
-        style={{ width: '120%', height: '120%' }}
-      />
+    <section id="problem" className="relative min-h-screen w-full flex flex-col items-center justify-center bg-black p-4 md:p-8 lg:p-12">
+      <div className="relative w-full h-full flex flex-col items-center justify-center rounded-[3rem] overflow-hidden border border-white/5">
+        {/* Background Video */}
+        <FadingVideo
+          src="https://stream.mux.com/r6pXRAJb3005XEEbl1hYU1x01RFJDSn7KQApwNGgAHHbU.m3u8"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
+        />
+        
+        {/* Overlay for better readability */}
+        <div className="absolute inset-0 bg-black/40 z-1" />
 
-      {/* Content Container */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center pt-64 pb-32 px-4 text-center max-w-4xl">
+        {/* Content Container */}
+        <div className="relative z-10 flex-1 flex flex-col items-center justify-center pt-32 pb-32 px-4 text-center max-w-4xl">
         {/* Badge */}
         <motion.div
           {...entranceTransition}
@@ -69,6 +72,7 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 }
