@@ -78,10 +78,26 @@ export default function Contact() {
                 </div>
               </div>
               <div className="space-y-2">
-                <p className="text-[10px] text-white/30 uppercase tracking-widest font-body">Location</p>
-                <div className="flex items-center gap-3 text-white/60 font-body font-light">
-                  <MapPin className="w-4 h-4" />
-                  <span>Cloud Native | Global Ops</span>
+                <p className="text-[10px] text-white/30 uppercase tracking-widest font-body">Locations</p>
+                <div className="space-y-4 text-white/60 font-body font-light">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="w-4 h-4" />
+                    <span>Cloud Native | Global Ops</span>
+                  </div>
+                  <div className="grid grid-cols-1 gap-2 pl-7">
+                    <a href="https://maps.app.goo.gl/36FeFeXTFKXP9XJz9" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors flex items-center gap-2">
+                       <span className="w-1 h-1 rounded-full bg-white/20"></span>
+                       Bangalore
+                    </a>
+                    <a href="https://maps.app.goo.gl/siBYzoHvDZS2bDYe7" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors flex items-center gap-2">
+                       <span className="w-1 h-1 rounded-full bg-white/20"></span>
+                       Kochi
+                    </a>
+                    <a href="https://maps.app.goo.gl/dzgmL2ixJPyReUmX7" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors flex items-center gap-2">
+                       <span className="w-1 h-1 rounded-full bg-white/20"></span>
+                       Mumbai
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
