@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ImpactStrip from '../components/ImpactStrip';
 import Capabilities from '../components/Capabilities';
@@ -122,10 +123,10 @@ export default function Home() {
               Ready to Build the Machine That Runs Your Business?
             </h2>
             <div className="flex flex-wrap justify-center gap-6">
-                <button className="liquid-glass-strong rounded-full px-7 py-3 text-sm font-medium text-white hover:scale-110 transition-all shadow-2xl border border-white/10 group">
+                <Link to="/contact" className="liquid-glass-strong rounded-full px-7 py-3 text-sm font-medium text-white hover:scale-110 transition-all shadow-2xl border border-white/10 group flex flex-col items-center">
                   Book Appointment Now
                   <span className="block text-[8px] uppercase tracking-[0.2em] font-body opacity-40 mt-0.5 group-hover:opacity-100 transition-opacity">Limited slots available</span>
-                </button>
+                </Link>
             </div>
         </div>
       </section>
